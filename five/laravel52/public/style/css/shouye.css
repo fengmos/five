@@ -1,0 +1,225 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+.a {
+  position: absolute;
+}
+.r {
+  position: relative;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+  background: 0;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.warp section {
+  -webkit-box-flex: 1;
+  background: #f2f2f2;
+  overflow-y: auto;
+}
+.warp section::-webkit-scrollbar {
+  width: 0;
+}
+.warp section .banner {
+  width: 100%;
+  height: 10rem;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #ccc;
+}
+.warp section .banner .banner_left {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.warp section .banner .banner_left dl {
+  margin: 1.5rem 1.5rem 0 1.9rem;
+}
+.warp section .banner .banner_left dl img {
+  width: 5.5rem;
+  height: auto;
+  background: none;
+}
+.warp section .banner .banner_left dl dd {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.warp section .banner .banner_left ul {
+  margin: 2.5rem 0;
+  padding-left: 1.5rem;
+  border-left: 1px solid #ccc;
+  color: #333333;
+}
+.warp section .banner .banner_left ul li {
+  font-size: 1.6rem;
+}
+.warp section .banner .banner_left ul li:nth-child(1) span {
+  display: inline-block;
+  width: 4.5rem;
+  height: 1.4rem;
+  background: #ff4808;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.4rem;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 0.7rem;
+}
+.warp section .banner .banner_left ul li:nth-child(2) {
+  margin-top: 1rem;
+}
+.warp section .banner .banner_left ul li:nth-child(2) span {
+  color: red;
+}
+.warp section .banner .banner_right {
+  margin-right: 2rem;
+  line-height: 10rem;
+}
+.warp section .banner .banner_right img {
+  width: 1rem;
+  height: auto;
+  background: none;
+}
+.warp section .main {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.warp section .main h2 {
+  width: 100%;
+  height: 3.5rem;
+  background: none;
+  line-height: 3.5rem;
+  text-align: center;
+  color: #ff7f1d;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #f2f2f2;
+  font-weight: bold;
+}
+.warp section .main h2 span {
+  font-size: 1rem;
+  margin-left: 0.8rem;
+  font-weight: normal;
+}
+.warp section .main .main_info {
+  width: 100%;
+  height: 7.5rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #f2f2f2;
+}
+.warp section .main .main_info dl {
+  width: 0;
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.warp section .main .main_info dl dt {
+  line-height: 7.5rem;
+}
+.warp section .main .main_info dl dt img {
+  width: auto;
+  height: 2.3rem;
+  background: none;
+  margin-left: 1rem;
+}
+.warp section .main .main_info dl dd {
+  line-height: 2.5rem;
+  margin-left: 1.5rem;
+}
+.warp section .main .main_info dl dd ul {
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+}
+.warp section .main .main_info dl dd ul li:nth-child(2) {
+  color: #808080;
+  font-size: 1.4rem;
+}
+.warp section .main .main_info .left {
+  border-left: 1px solid #f2f2f2;
+}
+.warp section .news {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  margin-bottom: 0.5rem;
+}
+.warp section .news p {
+  line-height: 3.5rem;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #f2f2f2;
+}
+.warp section .news p img {
+  width: 2rem;
+  height: auto;
+  background: none;
+  margin: 0 1rem;
+}
+.warp section .news p span {
+  float: right;
+  margin-right: 1rem;
+}
+.warp section .news p span img {
+  width: 0.8rem;
+  height: auto;
+  background: none;
+  margin-right: 0;
+}
+.warp section .news .news_info {
+  width: 100%;
+  height: 6rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #f2f2f2;
+}
+.warp section .news .news_info dl {
+  -webkit-box-flex: 1;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.warp section .news .news_info dl img {
+  width: 4rem;
+  height: auto;
+  background: none;
+  margin-right: 1.5rem;
+}
+.warp section .news .news_info dl dd {
+  line-height: 2rem;
+}
+.warp section .news .news_info dl dd li:nth-child(2) {
+  color: #b8b8b8;
+}
+.warp section .news .news_info span {
+  line-height: 6rem;
+  margin-right: 1rem;
+}
+.warp section .news .wendang {
+  width: 100%;
+  height: 4rem;
+  background: none;
+}
+.warp section .news .wendang p {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  line-height: 4rem;
+  padding-left: 1rem;
+  border-bottom: 1px solid #f2f2f2;
+  box-sizing: border-box;
+}

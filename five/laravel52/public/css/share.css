@@ -1,0 +1,220 @@
+/*!
+ * Creator: zq(QQ:920632841)
+ * Copyright 2015 【培训通】.
+ */
+
+* { font-family:'Microsoft YaHei',"微软雅黑";font-size:12px;}
+body{ font-size:12px;margin:0px; padding:0px;width:100%;font-family:"Microsoft Yahei","微软雅黑";background-color:#f4f4f4;}
+body a{outline:none;blr:expression(this.onFocus=this.blur());}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike,sub, sup, tt, var,u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, table, caption, tbody, tfoot, thead, tr, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {font: inherit;margin: 0;padding: 0;vertical-align: baseline; font-style:normal;}
+ol, ul {list-style: none outside none;}
+input {font-family: "Microsoft Yahei","微软雅黑";display: inline-block;vertical-align: middle;}
+input, input:focus, button, button:focus, select, textarea, textarea:focus, select:focus {outline: medium none;}
+select {font-family: "Microsoft Yahei","微软雅黑";}
+textarea {font-family: "Microsoft Yahei","微软雅黑";resize: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+.clearfix{zoom:1}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clear{clear:both;}
+.none{display:none;}
+.absolute{position:absolute;}
+.cursor{ cursor:pointer;}
+.overflow-h { overflow:hidden;}
+.dp-i-b { display:inline-block;}
+.dp-b { display:block;}
+a img, img { border:0;}
+a img:hover{opacity: 0.9; filter: alpha(opacity=90); -moz-opacity: 0.9; -khtml-opacity: 0.9;}
+a{text-decoration:none}
+
+::selection {background:#FF7300; color:white;}
+::-moz-selection {background:#FF7300; color:white;}
+
+.hide{display:none;}
+.clear{ clear:both;}/*清除浮动*/
+.fl{ float:left;}
+.fr{ float:right;}
+
+/*边距属性控制---上*/
+.pt1{padding-top:1px;}
+.pt5{padding-top:5px;}
+.pt10{padding-top:10px;}
+.pt15{padding-top:15px;}
+.pt20{padding-top:20px;}
+.pt25{padding-top:25px;}
+.pt30{padding-top:30px;}
+.pt40{padding-top:40px;}
+.mt1{margin-top:1px;}
+.mt5{margin-top:5px;}
+.mt8{margin-top:8px;}
+.mt10{margin-top:10px;}
+.mt15{margin-top:15px;}
+.mt20{margin-top:20px !important;}
+.mt25{margin-top:25px;}
+.mt30{margin-top:30px;}
+.mt35{margin-top:35px;}
+.mt40{margin-top:40px;}
+.mt50{margin-top:50px;}
+
+/*边距属性控制---下*/
+.pb4{padding-bottom:4px}
+.pb5{padding-bottom:5px}
+.pb10{padding-bottom:10px}
+.pb15{padding-bottom:15px}
+.pb20{padding-bottom:20px}
+.pb25{padding-bottom:25px;}
+.pb30{padding-bottom:30px}
+.mb5{margin-bottom:5px}
+.mb10{margin-bottom:10px}
+.mb15{margin-bottom:15px}
+.mb20{margin-bottom:20px}
+.mb30{margin-bottom:30px}
+.mb40{margin-bottom:40px}
+.mb50{margin-bottom:50px}
+
+/*边距属性控制---左*/
+.pl5{padding-left:5px;}
+.pl10{padding-left:10px;}
+.pl15{padding-left:15px;}
+.pl20{padding-left:20px;}
+.pl30{padding-left:30px;}
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+.ml20{margin-left:20px;}
+.ml30{margin-left:30px;}
+.ml45{margin-left:45px;}
+
+/*边距属性控制---右*/
+.pr5{padding-right:5px;}
+.pr9{padding-right:9px;}
+.pr10{padding-right:10px;}
+.pr15{padding-right:15px;}
+.pr20{padding-right:20px;}
+.mr5{margin-right:5px;}
+.mr9{margin-right:9px;}
+.mr10{margin-right:10px;}
+.mr15{margin-right:15px;}
+.mr20{margin-right:20px;}
+
+/*边距属性控制*/
+.p1{padding:1px;}
+.p2{padding:2px;}
+.p3{padding:3px;}
+.p4{padding:4px;}
+.p5{padding:5px;}
+.p10{padding:10px;}
+.p15{padding:15px;}
+.p20{padding:20px;}
+.p25{padding:25px;}
+.m1{margin:1px;}
+.m2{margin:2px;}
+.m3{margin:3px;}
+.m4{margin:4px;}
+.m5{margin:5px;}
+.m10{margin:10px;}
+.m15{margin:15px;}
+.m20{margin:20px;}
+
+/*对象背景属性控制*/
+.bg1{background:#fff;}
+.bg2{background:#000000;}
+.bg3{background:#FF7300;}
+.bg4{background:#FCFCE9;}
+.bgf6{background:#f6f6f6;}
+.bgf9{background:#f9f9f9;}
+
+
+/*字体基础属性控制*/
+body {color: #333;font:normal 12px/1.57 "Microsoft Yahei","微软雅黑",Tahoma,Arial,STHeiti,sans-serif;}
+
+/*字体颜色控制*/
+.gray, a.gray{color:#333;}
+.gray1, a.gray1{color:#666666;}
+.gray2, a.gray2{color:#A9A9A9;}
+a.gray2:hover{color:#FF7300;}
+.orange, a.orange{color:#FF7300;}
+.green,a.green{color:#6CC142;}
+.blue, a.blue{color:#0066CC;}
+.red,a.red{color:#E52952;}
+.white, a.white{color:#fff;}
+
+/*字体大小控制*/
+.f12{font-size:12px;font-family:微软雅黑;}
+.f13{font-size:13px;font-family:微软雅黑;}
+.f14{font-size:14px;font-family:微软雅黑;}
+.f15{font-size:15px;font-family:微软雅黑;}
+.f16{font-size:16px;font-family:微软雅黑;}
+.f18{font-size:18px;font-family:微软雅黑;}
+.f19{font-size:19px;font-family:微软雅黑;}
+.f20{font-size:20px;font-family:微软雅黑;}
+.f22{font-size:22px;font-family:微软雅黑;}
+.f24{font-size:24px;font-family:微软雅黑;}
+.f26{font-size:26px;font-family:微软雅黑;}
+.f28{font-size:28px;font-family:微软雅黑;}
+.f30{font-size:30px;}
+.f32{font-size:32px;}
+.f34{font-size:34px;}
+.f36{font-size:36px;}
+.f38{font-size:38px;}
+.f40{font-size:40px;}
+
+/*字体行高控制*/
+.lh18{line-height:18px;}
+.lh19{line-height:19px;}
+.lh20{line-height:20px;}
+.lh21{line-height:21px;}
+.lh22{line-height:22px;}
+.lh23{line-height:23px;}
+.lh24{line-height:24px;}
+.lh25{line-height:25px;}
+.lh26{line-height:26px;}
+.lh27{line-height:27px;}
+.lh28{line-height:28px;}
+.lh29{line-height:29px;}
+.lh30{line-height:30px;}
+.lh31{line-height:31px;}
+.lh32{line-height:32px;}
+.lh33{line-height:33px;}
+.lh34{line-height:34px;}
+.lh35{line-height:35px;}
+.lh36{line-height:36px;}
+.lh37{line-height:37px;}
+.lh40{line-height:40px;}
+.lh45{line-height:45px;}
+
+/*字体控制*/
+.fm1{font-family:'微软雅黑';}
+.fm2{font-family:'宋体';}
+.fm3{font-family:Arial, Helvetica, sans-serif;}
+
+/*字体其它控制*/
+.n{font-weight:normal;}
+.b,.strong{font-weight:bold;}
+
+/*文本对齐控制*/
+.tc,.center{text-align:center;}
+.tl{text-align:left;}
+.tr{text-align:right;}
+
+/*文本缩进控制*/
+.i999{text-indent:-999em;}
+.i24{text-indent:24px;}
+.i28{text-indent:28px;}
+.i30{text-indent:30px;}
+
+/*文字对象间隔控制*/
+.text-s-1{word-spacing:1px;}
+.text-s-2{word-spacing:2px;}
+.text-s-3{word-spacing:3px;}
+.text-s-4{word-spacing:4px;}
+.text-s-5{word-spacing:5px;}
+
+/*字体链接色彩控制*/
+.link-a a{color:#783200;}
+
+/*字体下划线控制*/
+.t-d-lt{ text-decoration:line-through;}
+
+.bb{border-bottom:1px solid #E2E2E2;}
+.bt{border-top:1px solid #E2E2E2;}
+table {border-collapse: collapse;}
