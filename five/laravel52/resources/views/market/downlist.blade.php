@@ -50,8 +50,10 @@
 
             <ul class="list">
 
-               <a href=""><li class="item  item-button-right icon ion-ios-person-outline">个人信息</li></a>
-               <a href=""><li class="item  item-button-right icon ion-ios-person-outline">fs</li></a>
+                @foreach($list as $k=>$v)
+               <a href="{{url('downloads')}}?url={{$v['url']}}&name={{$v['file_name']}}"><li class="item  item-button-right icon ion-ios-person-outline">{{$v['file_name']}}</li></a>
+                    @endforeach
+
 
             </ul>
 

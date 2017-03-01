@@ -95,8 +95,19 @@
                         type: "POST",
                         url: "{{url('addlist')}}",
                         data: {_token:token,url:url,userid:userid,fid:fid},
+                        dataType:'json',
                         success: function(msg){
-                            alert( msg );
+                            if(msg.stat==1){
+                                alert(msg.msg);
+                                window.location.href="{{url('downlist')}}";
+                            }else if(msg.stat==3){
+
+                                alert(msg.msg)
+
+                            }else{
+                                alert('操作失败，请稍后再试');
+                            }
+
                         }
                     });
 

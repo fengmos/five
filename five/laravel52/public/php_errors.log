@@ -44,3 +44,6 @@ Stack trace:
 [01-Mar-2017 05:39:50 UTC] PHP Fatal error:  Cannot access empty property in D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\app\Http\Controllers\DownlistController.php on line 17
 [01-Mar-2017 06:48:14 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Session' not found in D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\app\Http\Controllers\DownlistController.php on line 51
 [01-Mar-2017 06:59:17 UTC] PHP Fatal error:  Class 'App\Http\Controllers\DB' not found in D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\app\Http\Controllers\DownlistController.php on line 55
+[01-Mar-2017 07:38:19 UTC] PHP Fatal error:  Class 'Rouge' not found in D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\app\Http\routes.php on line 93
+[01-Mar-2017 08:37:27 UTC] PHP Parse error:  syntax error, unexpected '}' in D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\app\Http\Controllers\DownlistController.php on line 171
+[01-Mar-2017 08:39:42 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\app\Http\Controllers\DownlistController.php on line 105

@@ -89,3 +89,5 @@ Route::post('addlist','DownlistController@addlist');
 
 //下载列表
 Route::get('downlist','DownlistController@downlist');
+//下载功能
+Route::get('downloads','DownlistController@downloads');
