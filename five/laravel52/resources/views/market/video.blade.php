@@ -87,13 +87,14 @@
                 var url = "<?=$onetv['url']?>";
                 var userid = "{{$userid}}";  //用户登录标识
                 var token = "{{csrf_token()}}";
+                var fid = "{{$fid}}";
                 if(userid!=''){
 
 
                     $.ajax({
                         type: "POST",
-                        url: "{{url('downlist')}}",
-                        data: {_token:token,url:url,userid:userid},
+                        url: "{{url('addlist')}}",
+                        data: {_token:token,url:url,userid:userid,fid:fid},
                         success: function(msg){
                             alert( msg );
                         }

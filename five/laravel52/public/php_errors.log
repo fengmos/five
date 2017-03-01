@@ -26,3 +26,21 @@ Stack trace:
 #3 D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\vendor\laravel\framework\src\Illuminate\Container\Container.php(629): Illuminate\Container\Container->build('App\\Http\\Contro...', Array)
 #4 D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(697): Illuminate\Container\Container->make('App in D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\app\Http\Controllers\DownlistController.php on line 17
 [01-Mar-2017 05:27:31 UTC] PHP Fatal error:  Cannot access empty property in D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\app\Http\Controllers\DownlistController.php on line 17
+[01-Mar-2017 05:39:06 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: downloads' in D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\app\Http\Controllers\DownlistController.php:17
+Stack trace:
+#0 D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\app\Http\Controllers\DownlistController.php(17): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\phpStudy\\WWW...', 17, Array)
+#1 [internal function]: App\Http\Controllers\DownlistController->__construct(Object(App\download))
+#2 D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\vendor\laravel\framework\src\Illuminate\Container\Container.php(779): ReflectionClass->newInstanceArgs(Array)
+#3 D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\vendor\laravel\framework\src\Illuminate\Container\Container.php(629): Illuminate\Container\Container->build('App\\Http\\Contro...', Array)
+#4 D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(697): Illuminate\Container\Container->make('App in D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\app\Http\Controllers\DownlistController.php on line 17
+[01-Mar-2017 05:39:06 UTC] PHP Fatal error:  Cannot access empty property in D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\app\Http\Controllers\DownlistController.php on line 17
+[01-Mar-2017 05:39:50 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: downloads' in D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\app\Http\Controllers\DownlistController.php:17
+Stack trace:
+#0 D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\app\Http\Controllers\DownlistController.php(17): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\phpStudy\\WWW...', 17, Array)
+#1 [internal function]: App\Http\Controllers\DownlistController->__construct(Object(App\download))
+#2 D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\vendor\laravel\framework\src\Illuminate\Container\Container.php(779): ReflectionClass->newInstanceArgs(Array)
+#3 D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\vendor\laravel\framework\src\Illuminate\Container\Container.php(629): Illuminate\Container\Container->build('App\\Http\\Contro...', Array)
+#4 D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(697): Illuminate\Container\Container->make('App in D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\app\Http\Controllers\DownlistController.php on line 17
+[01-Mar-2017 05:39:50 UTC] PHP Fatal error:  Cannot access empty property in D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\app\Http\Controllers\DownlistController.php on line 17
+[01-Mar-2017 06:48:14 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Session' not found in D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\app\Http\Controllers\DownlistController.php on line 51
+[01-Mar-2017 06:59:17 UTC] PHP Fatal error:  Class 'App\Http\Controllers\DB' not found in D:\phpStudy\WWW\duoxuewgit\five\five\laravel52\app\Http\Controllers\DownlistController.php on line 55

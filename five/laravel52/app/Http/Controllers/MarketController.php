@@ -93,19 +93,23 @@ class MarketController extends Controller{
     }
 
     //播放
-    public function bfang(){
+    public function bfang(Request $Request){
         $id=Input::get('fid');
         $cur_id=Input::get('cur_id');
 
         $session = new Session;
         $userid = $session->get('id');  //用户登录id
+        $Request->session()->put('userid',$userid);
+
+        $fid = $Request->input('fid');
+
 
         $cur = new Cur();
         $kejie=$cur->curOne($cur_id);
         $curone=$cur->searchCurone($cur_id);
         $onetv=DB::table('study_chapter')->where('id',$id)->first();
 //        print_r($curone);die;
-        return view('market.video',['curone'=>$curone,'onetv'=>$onetv,'kejie'=>$kejie,'userid'=>$userid]);
+        return view('market.video',['curone'=>$curone,'onetv'=>$onetv,'kejie'=>$kejie,'userid'=>$userid,'fid'=>$fid]);
     }
     ///加入购物车
      public function shopcart(){
