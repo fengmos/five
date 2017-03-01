@@ -96,12 +96,16 @@ class MarketController extends Controller{
     public function bfang(){
         $id=Input::get('fid');
         $cur_id=Input::get('cur_id');
+
+        $session = new Session;
+        $userid = $session->get('id');  //用户登录id
+
         $cur = new Cur();
         $kejie=$cur->curOne($cur_id);
         $curone=$cur->searchCurone($cur_id);
         $onetv=DB::table('study_chapter')->where('id',$id)->first();
 //        print_r($curone);die;
-        return view('market.video',['curone'=>$curone,'onetv'=>$onetv,'kejie'=>$kejie]);
+        return view('market.video',['curone'=>$curone,'onetv'=>$onetv,'kejie'=>$kejie,'userid'=>$userid]);
     }
     ///加入购物车
      public function shopcart(){

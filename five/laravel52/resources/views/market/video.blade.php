@@ -80,7 +80,33 @@
 
 <section class="indexMore bgf6  clearfix">
     <div>
+        <a href="javascript:void(0)" class="more_r more" id="joinDown" >加入下载列表<i></i></a>
         <a href="javascript:void(0)" class="more_r more" id="back-to-top">回到顶部<i></i></a>
+        <script>
+            $("#joinDown").click(function(){
+                var url = "<?=$onetv['url']?>";
+                var userid = "{{$userid}}";  //用户登录标识
+                var token = "{{csrf_token()}}";
+                if(userid!=''){
+
+
+                    $.ajax({
+                        type: "POST",
+                        url: "{{url('downlist')}}",
+                        data: {_token:token,url:url,userid:userid},
+                        success: function(msg){
+                            alert( msg );
+                        }
+                    });
+
+
+                }else{
+                    alert('请登录后再操作');
+                    window.location.href="{{url('login')}}";
+
+                }
+            })
+        </script>
     </div>
 </section>
     </ion-scroll>

@@ -82,3 +82,7 @@ Route::any('question','QuestionController@index');
 
 //笔记
 Route::any('notes','NotesController@index');
+
+//加入下载列表
+Route::get('downlist','DownlistController@downlist');
+Route::post('downlist','DownlistController@downlist');
