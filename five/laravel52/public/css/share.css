@@ -128,9 +128,11 @@ a{text-decoration:none}
 body {color: #333;font:normal 12px/1.57 "Microsoft Yahei","微软雅黑",Tahoma,Arial,STHeiti,sans-serif;}
 
 /*字体颜色控制*/
+
 .gray, a.gray{color:#333;}
 .gray1, a.gray1{color:#666666;}
 .gray2, a.gray2{color:#A9A9A9;}
+
 a.gray2:hover{color:#FF7300;}
 .orange, a.orange{color:#FF7300;}
 .green,a.green{color:#6CC142;}
@@ -141,7 +143,7 @@ a.gray2:hover{color:#FF7300;}
 /*字体大小控制*/
 .f12{font-size:12px;font-family:微软雅黑;}
 .f13{font-size:13px;font-family:微软雅黑;}
-.f14{font-size:14px;font-family:微软雅黑;}
+.f14{font-size:14px;font-family:微软雅黑; color:#387ef5}
 .f15{font-size:15px;font-family:微软雅黑;}
 .f16{font-size:16px;font-family:微软雅黑;}
 .f18{font-size:18px;font-family:微软雅黑;}
