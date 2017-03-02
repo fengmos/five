@@ -98,7 +98,7 @@
 
 </body>
 </html>
-<script ></script>
+
 <script type="text/javascript" src="{{asset('style/js/jquery.js')}}"></script>
 <script>
     $(function(){
@@ -112,5 +112,21 @@
             $("#user_info").show();
             $("#user_login").hide();
         }
+
+//        $(".aclick").click(function(){
+//            $.ajax({
+//                type: "GET",
+//                url: "http://home.duzejun.cn/downloads?url=./uploads/1487982578.mp4&name=yii2.0%E7%AE%80%E4%BB%8B",
+//
+//                success: function(msg){
+//
+//                }
+//            });
+//        })
     })
+
+
+
+
 </script>
+
