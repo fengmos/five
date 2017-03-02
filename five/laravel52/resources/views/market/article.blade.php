@@ -72,7 +72,7 @@ $session = new Session();
                 <tr>
                     <td class="gray2" >讲课老师</td>
                     <td class="f14 gray1">
-                        <a href="javascript:void(0)/jigou/185785" class="gray1" target="_blank">
+                        <a href="{{url('detamils')}}?id={{$id}}" class="gray1" target="_blank">
                             <?=$curone['teacher_name']?>
                         </a>
                     </td>

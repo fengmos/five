@@ -44,6 +44,9 @@ Route::get('cont','MarketController@cont');//课程详情
 Route::post('laidian','MarketController@laidian');//点击更多
 Route::get('bfang','MarketController@bfang');//课程详情
 
+Route::get('detamils','MarketController@detamils');//点击老师姓名详情
+Route::any('check','MarketController@check');//全部课程分类
+
 Route::post('addcart','MarketController@shopcart');//加入购物车
 Route::get('select_cart','MarketController@getCart');//查看用户是否已经将视频添加到购物车
 

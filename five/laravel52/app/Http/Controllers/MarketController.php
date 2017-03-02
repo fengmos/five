@@ -61,35 +61,38 @@ class MarketController extends Controller{
         $data=$cur->searchCurNum($num,$nums);
         return json_encode($data);
     }
-//    //////详情页
-//    public function cont(){
-//        $id=Input::get('cur_id');
-//        $cur = new Cur();
-//        $curone=$cur->searchCurone($id);
-//        $kejie=$cur->curOne($id);
-//        //print_r($kejie);die;
-//        return view('market.article',['curone'=>$curone,'kejie'=>$kejie]);
-//    }
-    //////详情页
+
+    /*
+     * 通过前台点击传过来ID
+     * 把ID发送给model 层调用searchCurone方法
+     * 通过两表联查查询出老师和课程的信息
+     * 再通过ID传送给curOne方法调用model层查询出课程资料
+     * 通过全局session
+     */
     public function cont(){
         $id=Input::get('cur_id');
+
         $cur = new Cur();
         $curone=$cur->searchCurone($id);
+
         $kejie=$cur->curOne($id);
+
         $session = new Session();
         $name = $session->get('nickname');
+
         if($name!=""){
             $user = DB::table('study_user')->where('nickname', '=',$name)->first();
             $user_id = $user['user_id'];
             $res=DB::table('study_order')->where('cur_id',$id)->where('user_id',$user_id)->where('status',1)->first();
+            //dd($res);die;
             if($res){
                 $curone['cur_price']=0;
-                return view('market.article',['curone'=>$curone,'kejie'=>$kejie]);
+                return view('market.article',['curone'=>$curone,'kejie'=>$kejie,'id'=>$id]);
             }else{
-                return view('market.article',['curone'=>$curone,'kejie'=>$kejie]);
+                return view('market.article',['curone'=>$curone,'kejie'=>$kejie,'id'=>$id]);
             }
         }
-        return view('market.article',['curone'=>$curone,'kejie'=>$kejie]);
+        return view('market.article',['curone'=>$curone,'kejie'=>$kejie,'id'=>$id]);
     }
 
     //播放
@@ -293,6 +296,33 @@ class MarketController extends Controller{
         $parameter['sign_type'] = $alipay_config['sign_type'];
         $html = "https://mapi.alipay.com/gateway.do?".$str.'&sign='.$parameter['sign'].'&sign_type='.$parameter['sign_type'];
         return  $html;
+    }
+    /*
+     * 详情页面点击老师姓名
+     * 进入老师的详情列表页面
+     */
+    public function detamils(){
+        $id=$_GET['id'];
+
+        $cur=new Cur();
+        $data= $cur->select($id);
+        //dd($data);
+        return view('market.detamils',['data'=>$data]);
+
+    }
+    /*
+     * 接受前台ajax 点击事件
+     * 返回值 1为成功 2为没登录
+     * 0为已经点击过
+     */
+    public function check(){
+        $num=$_GET['name'];
+        $teacher_id=$_GET['teacher_id'];
+        $cur=new Cur();
+        $res=$cur->check($num,$teacher_id);
+        echo $res;
+
+
     }
 }
 
