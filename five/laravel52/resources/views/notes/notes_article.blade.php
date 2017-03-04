@@ -55,7 +55,7 @@
                 <div class="InsD_title">
                     <div class="clearfix">
                         <h3 class="f18 lh25"><?=$curone['notes_tittle']?></h3>
-                        <a href="javascript:void(0)" class="share lh25"><i></i>分享</a>
+                        <a href="javascript:void(0)" class="share lh25"><i></i></a>
                     </div>
                 </div>
                 <div class="InsD_table">
