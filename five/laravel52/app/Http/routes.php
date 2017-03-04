@@ -82,3 +82,7 @@ Route::any('question','QuestionController@index');
 
 //笔记
 Route::any('notes','NotesController@index');
+//地阿基进入详情页
+Route::any('notes_ur','NotesController@notes_ur');
+//进入该分类下的笔记
+Route::any('notes_urs','NotesController@notes_urs');

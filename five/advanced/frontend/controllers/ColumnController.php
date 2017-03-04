@@ -30,7 +30,6 @@ class ColumnController extends \yii\web\Controller
         $type=new Type();
         $info=$type::find()->asArray()->all();
         $data=$this->recursion($info);
-
         //老师
         $query = new Query();
         $res = $query->select('teacher_id,teacher_name')->from('study_teacher')->all();
@@ -146,18 +145,6 @@ class ColumnController extends \yii\web\Controller
         if(!empty($type_id) && !empty($name)){
             $where= "cur_name like '%$name%' and typeid=$type_id";
         }
-         //$data = $query->select(['cur_name','cur_describe','cur_img','type_name','admin_name','study_details.cur_id','chapter','url'])->from('study_admin')->join('inner join','study_cur','study_admin.admin_id = study_cur.teacher_id')->join('inner join','study_details','study_cur.cur_id = study_details.cur_id')->join('inner join','study_chapter','study_details.id = study_chapter.det_id')->join('inner join','study_type','study_cur.typeid = study_type.type_id');
-        //$data = $query->select('*')->from('study_cur')->join('inner join','study_type','study_cur.typeid = study_type.type_id')->all();
-        //$ob = new Query();
-      //  foreach ($data as $k=>$v){
-       //     $data[$k]['jie'] = $ob->select('id,chapter')->from('study_details')->where(['cur_id'=>$v['cur_id']])->all();
-      //  }
-        //$arr=$obj->select(['chapter','url'])->from('study_details')->join('inner join','study_chapter','study_details.id = study_chapter.det_id')->where(['study_details.cur_id'=>9])->all();
-//        foreach ($data as $key=>$val){
-//            $obj = new Query();
-//            $data[$key]['lala'] = $obj->select(['chapter','url'])->from('study_details')->join('inner join','study_chapter','study_details.id = study_chapter.det_id')->where(['study_details.cur_id'=>$val['cur_id']])->all();
-//
-//        }
         $pages = isset($page) ? $page : 1 ;
         //计算总条数
         $que=new Query();
