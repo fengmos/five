@@ -54,9 +54,7 @@ $session = new Session();
     <ion-scroll  direction="y" scrollbar-y="false" style="width: 100%; height: 100%">
         <section>
             <div class="nxqalbum" style="margin-top: 45px;">
-                <img src="http://admin.duzejun.cn/.<?=$data['teacher_img']?>" data-original="" class="nxqtopimg sw_loading" />
-			
-
+                <img src="<?=$data['teacher_img']?>" data-original="" class="nxqtopimg sw_loading" />
                 <input type="hidden" id="teacher_id"value="<?php echo $data['teacher_id']?>">
                 {{--http://admin.duzejun.cn/--}}
             </div>
