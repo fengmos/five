@@ -29,6 +29,14 @@ $session = new Session();
         a{
             text-decoration:none;
         }
+
+        #aa{
+            width: 23px; height: 23px;
+            float: left;
+        }
+        td{
+            height: 35px;
+        }
     </style>
 </head>
 <body>
@@ -78,16 +86,12 @@ $session = new Session();
                         </tr>
 
                         <tr>
-                            <td class="gray2">人气</td>
-                            <td>
-                                <i class="star icon_color"></i>
-                                <i class="star icon_color"></i>
-                                <i class="star icon_color"></i>
-                                <i class="star icon_color"></i>
-                                <i class="star icon_color"></i>
-                                <input type="text" id="num" value="<?php echo $data['teacher_num']?>个人为他点过赞">
+                            <td class="gray2 zanimg" align="center">人气</td>
+                            <td >
+
+                                <font  id="num">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $data['teacher_num']?>个人为他点过赞</font>
                                 <?php /*<input type="button" id="aa" onclick="fun()" value="点赞"/>*/ ?>
-                             <img src="image/timg.jpg" width="30px" height="30px" onclick="fun()"value="点赞"id="aa">
+                                <img src="image/timg.png" width="30px" height="30px" onclick="fun()"value="点赞"id="aa">
 
                             </td>
 
@@ -96,7 +100,7 @@ $session = new Session();
                             <td class="gray2">教师介绍</td>
                             <td class="gray1">
                                 <a href="javascript:void(0)">
-                                    <b class="f14"><textarea><?php echo $data['teacher_desc']?></textarea></b>
+                                    <b class="f14"><?php echo $data['teacher_desc']?></b>
                                 </a>
                             </td>
                         </tr>
