@@ -23,6 +23,7 @@ class CenterController extends Controller{
     	//$value = $request->session()->pull('key', 'default');
         $session = new Session();
         $nickname = $session->get('id');
+        $request->session()->put('userid',$nickname);
         $arr = DB::table('study_user')->where('user_id',$nickname)->first();
         return view('center.center',['arr'=>$arr]);
     }

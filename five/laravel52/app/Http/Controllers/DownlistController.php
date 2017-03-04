@@ -53,6 +53,8 @@ class DownlistController extends Controller
         $userid = $Request->session()->get('userid');  //用户id
 
 
+
+
         if ($userid != '') {
 
             $arr = DB::table('study_user')->where('user_id', $userid)->first();
@@ -66,7 +68,7 @@ class DownlistController extends Controller
             return view('market.downlist', $data);
         } else {
 
-            echo "请先登录!";
+            return redirect('login');
         }
 
 
@@ -85,13 +87,16 @@ class DownlistController extends Controller
 
         $pathinfo = pathinfo($address);  //获取文件信息
 
+
+
         $houzhuis = ($pathinfo['extension']);  //文件后缀
 
 
-        $linuxurl = '/data/wwwroot/admin.duzejun.cn/advanced/frontend/web/uploads';
+        $linuxurl = '/data/wwwroot/admin.duzejun.cn/advanced/frontend/web/uploads/';
+        $bendi = "D:/phpStudy/WWW/t2/";
 
 
-        $filename = "D:/phpStudy/WWW/t2/".$pathinfo['basename'];  //文件名
+        $filename = "$linuxurl".$pathinfo['basename'];  //文件名
 
 
         ###开始下载######
